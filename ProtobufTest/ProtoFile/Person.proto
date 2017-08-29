@@ -1,0 +1,12 @@
+syntax = "proto3"; //必须写这个 标明proto语法版本,有proto2，proto3
+package protobuf;  //包名
+
+//一个message相当于一个类
+//1,2,3并不代表参数默认值，而是一个参数标签
+//repeated可以理解为数组
+
+message Person{
+    string Name = 1;
+    int32 Age = 2;
+	repeated string NameList = 3;
+}
